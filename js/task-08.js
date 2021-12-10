@@ -11,13 +11,9 @@ function onSubmit(e) {
     if (email.value === "" || password.value === "") {
         return alert("Please fill in all the fields!");
     }
-    // else {
-        // Если пользователь заполнил все поля и отправил форму,
-// собери значения полей в обьект, где имя поля будет именем свойства,
-// а значение поля - значением свойства. Для доступа к элементам формы используй
-// свойство elements.
-// Выведи обьект с введенными данными в консоль 
-    // }
+    else {
+        console.log({email: email.value, password: password.value});
+    }
     loginForm.reset()
 }
 
